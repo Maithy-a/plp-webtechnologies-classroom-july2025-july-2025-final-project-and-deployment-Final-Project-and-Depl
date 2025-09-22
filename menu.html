@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maithya Café - Menu</title>
+    <meta name="description" content="Browse the menu of Maithya Café.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="site-manifest.json">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Maithya Café</a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">
+                <span class="sr-only">Menu</span>
+            </button>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html#reservation" class="button">Reserve</a>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-header">
+            <h1>Our Menu</h1>
+            <div class="menu-controls">
+                <input type="search" id="menu-search" placeholder="Search menu...">
+                <div class="filter-buttons">
+                    <button data-filter="all">All</button>
+                    <button data-filter="coffee">Coffee</button>
+                    <button data-filter="tea">Tea</button>
+                    <button data-filter="pastries">Pastries</button>
+                    <button data-filter="sandwiches">Sandwiches</button>
+                </div>
+            </div>
+        </section>
+        <section id="menu-items" class="menu-grid">
+            <!-- Menu items will be injected by JavaScript -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>123 Cozy Lane, Anytown</p>
+                <p>hello@maithyacafe.com</p>
+                <p>(555) 123-4567</p>
+            </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="hours">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 7am - 7pm</p>
+                <p>Sat-Sun: 8am - 6pm</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Maithya Café. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
